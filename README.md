@@ -1,12 +1,31 @@
-# Terraform IAC (Infrastructure as Code)
+# Terraform IAC – AWS Infrastructure Automation
 
-## Description
+## Overview
 
-This project provisions AWS infrastructure using Terraform. It creates:
+This project demonstrates the use of **Terraform** to provision and manage AWS cloud resources using **Infrastructure as Code (IaC)**.
 
-- An EC2 instance (Amazon Linux 2)
-- An S3 bucket
-- A security group that allows SSH (port 22) access
+Using Terraform, we:
+- Set up an **EC2 instance**
+- Create an **S3 bucket**
+- Later, update the infrastructure by adding a **Security Group**
+
+All resources are deployed and managed consistently and repeatably through Terraform scripts.
+
+---
+
+## What is Terraform?
+
+**Terraform** is an open-source tool developed by [HashiCorp](https://www.hashicorp.com/terraform) that allows you to define, provision, and manage infrastructure in a **declarative** way using simple configuration files.
+
+Think of Terraform as a tool to automate the creation of infrastructure (servers, databases, networks, etc.) just like you would automate software deployment — but instead of clicking buttons in the AWS console, you write code.
+
+### ✅ Why Use Terraform?
+
+- **Infrastructure as Code (IaC)** – Manage cloud resources through code for versioning and repeatability.
+- **Cloud Agnostic** – Supports AWS, Azure, GCP, and many others.
+- **Automation** – Deploy entire environments in minutes.
+- **Tracking Changes** – See exactly what changes will be made before applying them.
+- **Collaboration** – Code can be reviewed, reused, and tracked in Git.
 
 ---
 
@@ -119,4 +138,8 @@ terraform destroy
 - **S3 bucket**
 
 ![S3 bucket](https://raw.githubusercontent.com/OrireB/Terraform-IAC/e1b866d7f40cca7232c16d98514009321f16e924/S3%20bucket.png)
+
+- **Security Group**
+
+![Security Group](https://raw.githubusercontent.com/OrireB/Terraform-IAC/6f885582279d36526ca64351c9c63e9bf3ca110e/Security%20Group.png)
 
